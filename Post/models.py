@@ -3,8 +3,8 @@ from django.db import models
 # Create your models here.
 
 class Post(models.Model):
-    name=models.CharField(max_length=200)
-    age=models.IntegerField()
+    name=models.CharField(max_length=200,null=True,blank=True)
+    age=models.IntegerField(null=True,blank=True)
     
 
     def __str__(self):
